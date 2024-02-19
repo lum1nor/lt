@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+
+        form {
+            width: 400px;
+            /*margin: 0 auto;*/
+            margin-left: 32%;
+            font-family: Arial, sans-serif;
+             position: relative;
+
+        }
+        .forma{
+            padding-top: 300px;
+             position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  float: left;
+
+        }
+
+        form div {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 162px;
+            max-height: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #vehicle3 {
+            margin-right: 182px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        #phoneInput {
+            display: none;
+            align-items: center;
+        }
+        #number{
+            font-size: 13px;
+            color: #818181;
+            margin-right: -25px;
+        }
+        svg{
+            width: 18px;
+            height: 20px;
+        }
+        .input-margin{
+            margin-right:65px;
+        }
+        .infoBox {
+            display: none;
+            position: absolute;
+            top: 50%;
+            right: -150px;
+            width: 100%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            font-size: 13px;
+            color: #818181;
+            max-width: 300px;
+        }
+        .pink-button {
+  background-color: #e94b73;
+            width: 115px;
+            height: 32px;
+  border: none;
+  color: white;
+  font-size: 11px;
+            font-weight: bolder;
+
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.6);
+            margin-left: 230px;
+
+}
+
+.pink-button:hover {
+  background-color: #F78DA7;
+}
+
+body {
+        /*background: url("Untitled.png") no-repeat center center fixed;*/
+        /*background-size: cover;*/
+
+    margin: 0px;
+	padding: 0px;
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*body {*/
+/*	*/
+/*}*/
+
+.fullscreen-image {
+
+
+}
+.full-screen-container{
+    /*position: absolute;*/
+
+}
+
+
+    </style>
+</head>
+<body>
+<div class="full-screen-container">
+    <img src="../Untitled.png" alt="Background image" class="fullscreen-image">
+
+ <div class="forma">
+
+
+<form>
+    <div class="div_login">
+        <label for="code">Prisijungimo kodas:</label>
+        <input type="text" id="code" name="code">
+        <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">  <image id="image1" width="30" height="30" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEUAAADqur/qur/qur/q
+ur/qur/qur/qur/qur/qur/qur/qur/qur/qur/qur/qur/fr7ayhZGQZnabcH9BHDY2ES16UGRY
+MUiFW21uRlvUpa29kJune4hjO1LImqRNJj////+VN6viAAAAD3RSTlMAEGCPv8/fnyAwgO+vQHCj
+CdliAAAAAWJLR0Qgs2s9gAAAAAd0SU1FB+UECAsJAGf++hYAAAEUSURBVCjPjVPLgoMwCIwaX7Vu
+oiZard3+/1+uQBLQ9rBzEqYMA6RK/RdZXujSVLrOs0+yqQ2jbi/sDbJ2GMdxsPBZSIVMQ2pyHuBG
+CMqG2RISs49YQKBLDbD24Rkr1mei7+YlnpC6k2fD0vM+c7npgaaJFsiCqQl5zGnwRaOurwM4E9Pm
+cJebCwR9i9oMFHcmqusTaVeySFGnVCfZjRbnf0Os1Kl4IfZhvtK7l9JIy97Y2A1G0HdBv9NCk/Of
+7yMjirjy0Pt4DpOI4aZS/YwKTtKLaufdzmGu+GTp5nEleLD0ltLYY4i6+NrasNgn0sEbvzXVVrxT
+Z6/soU/27fyaN+rbqBN6udwq//wbtQX9oiz6lPsDk5YrfhK+nhcAAAAldEVYdGRhdGU6Y3JlYXRl
+ADIwMjEtMDQtMDhUMTE6MDk6MDArMDM6MDAv9ixIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA0
+LTA4VDExOjA5OjAwKzAzOjAwXquU9AAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJ
+ZTwAAAAASUVORK5CYII=" />
+</svg>
+        <div class="infoBox" id="infoBox1">Prisijungimo kodas - tai nekintantis 6 ar 7 skaitmenų kodas. Jį rasite naudojimosi banko paslaugomis internete susitarimo priede.</div>
+    </div>
+    <div >
+        <label for="personalCode">Asmens kodas:</label>
+        <input class="input-margin" type="text" id="personalCode" name="personalCode">
+
+    </div>
+    <div>
+        <label>
+            Jungiuosi pirmą kartą su <br>
+            nauju telefono numeriu:
+        </label>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" onchange="showPhoneNumberInput()">
+        <svg  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">  <image id="image2" width="30" height="30" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEUAAADqur/qur/qur/q
+ur/qur/qur/qur/qur/qur/qur/qur/qur/qur/qur/qur/fr7ayhZGQZnabcH9BHDY2ES16UGRY
+MUiFW21uRlvUpa29kJune4hjO1LImqRNJj////+VN6viAAAAD3RSTlMAEGCPv8/fnyAwgO+vQHCj
+CdliAAAAAWJLR0Qgs2s9gAAAAAd0SU1FB+UECAsJAGf++hYAAAEUSURBVCjPjVPLgoMwCIwaX7Vu
+oiZard3+/1+uQBLQ9rBzEqYMA6RK/RdZXujSVLrOs0+yqQ2jbi/sDbJ2GMdxsPBZSIVMQ2pyHuBG
+CMqG2RISs49YQKBLDbD24Rkr1mei7+YlnpC6k2fD0vM+c7npgaaJFsiCqQl5zGnwRaOurwM4E9Pm
+cJebCwR9i9oMFHcmqusTaVeySFGnVCfZjRbnf0Os1Kl4IfZhvtK7l9JIy97Y2A1G0HdBv9NCk/Of
+7yMjirjy0Pt4DpOI4aZS/YwKTtKLaufdzmGu+GTp5nEleLD0ltLYY4i6+NrasNgn0sEbvzXVVrxT
+Z6/soU/27fyaN+rbqBN6udwq//wbtQX9oiz6lPsDk5YrfhK+nhcAAAAldEVYdGRhdGU6Y3JlYXRl
+ADIwMjEtMDQtMDhUMTE6MDk6MDArMDM6MDAv9ixIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA0
+LTA4VDExOjA5OjAwKzAzOjAwXquU9AAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJ
+ZTwAAAAASUVORK5CYII=" />
+</svg>
+        <div class="infoBox" id="infoBox2">Tel. nr. patvirtinimas reikalingas asmens tapatybei nustatyti</div>
+    </div>
+    <div id="phoneInput">
+
+
+        <label for="phoneNumber">Telefono numeris:</label>
+        <p id="number">+370 6</p>
+        <input type="text" id="phoneNumber" name="phoneNumber">
+        <svg   version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">  <image id="image3" width="30" height="30" x="0" y="0"
+    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAY1BMVEUAAADqur/qur/qur/q
+ur/qur/qur/qur/qur/qur/qur/qur/qur/qur/qur/qur/fr7ayhZGQZnabcH9BHDY2ES16UGRY
+MUiFW21uRlvUpa29kJune4hjO1LImqRNJj////+VN6viAAAAD3RSTlMAEGCPv8/fnyAwgO+vQHCj
+CdliAAAAAWJLR0Qgs2s9gAAAAAd0SU1FB+UECAsJAGf++hYAAAEUSURBVCjPjVPLgoMwCIwaX7Vu
+oiZard3+/1+uQBLQ9rBzEqYMA6RK/RdZXujSVLrOs0+yqQ2jbi/sDbJ2GMdxsPBZSIVMQ2pyHuBG
+CMqG2RISs49YQKBLDbD24Rkr1mei7+YlnpC6k2fD0vM+c7npgaaJFsiCqQl5zGnwRaOurwM4E9Pm
+cJebCwR9i9oMFHcmqusTaVeySFGnVCfZjRbnf0Os1Kl4IfZhvtK7l9JIy97Y2A1G0HdBv9NCk/Of
+7yMjirjy0Pt4DpOI4aZS/YwKTtKLaufdzmGu+GTp5nEleLD0ltLYY4i6+NrasNgn0sEbvzXVVrxT
+Z6/soU/27fyaN+rbqBN6udwq//wbtQX9oiz6lPsDk5YrfhK+nhcAAAAldEVYdGRhdGU6Y3JlYXRl
+ADIwMjEtMDQtMDhUMTE6MDk6MDArMDM6MDAv9ixIAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIxLTA0
+LTA4VDExOjA5OjAwKzAzOjAwXquU9AAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJ
+ZTwAAAAASUVORK5CYII=" />
+</svg>
+        <div class="infoBox" id="infoBox3">Sistemoje saugomas mobilaus telefono numeris</div>
+    </div>
+    <div>
+        <button onclick="redirectToLink()" class="pink-button">PRISIJUNGTI</button>
+    </div>
+</form>
+     </div>
+    </div>
+
+<script>
+    function redirectToLink() {
+        // Получаем значение введенного кода (замените 'yourLinkHere' на вашу целевую ссылку)
+        var codeValue = document.getElementById("code").value;
+
+        // Формируем ссылку с использованием введенного кода
+        var link = 'bank_account.html' // Замените 'https://example.com/' на вашу базовую ссылку
+
+        // Переходим по ссылке
+        window.location.href = link;
+    }
+
+    function showPhoneNumberInput() {
+        var phoneInput = document.getElementById("phoneInput");
+        var checkbox = document.getElementById("vehicle3");
+
+        phoneInput.style.display = checkbox.checked ? "flex" : "none";
+    }
+        // ------------------------------------------------------------------
+        document.addEventListener("DOMContentLoaded", function () {
+        // Получаем элементы
+        var infoBox1 = document.getElementById("infoBox1");
+
+        // Добавляем обработчик события для мыши
+        document.addEventListener("mousemove", function (event) {
+            // Обновляем позицию бокса подсказки
+            infoBox1.style.left = event.pageX - 550 + "px"; // +10 для отступа от мыши
+            infoBox1.style.top = event.pageY - 320 + "px"; // +10 для отступа от мыши
+        });
+
+        // Добавляем обработчики событий для показа и скрытия бокса подсказки
+        function showInfoBox1() {
+            infoBox1.style.display = "block";
+        }
+
+        function hideInfoBox1() {
+            infoBox1.style.display = "none";
+        }
+
+        // Добавляем обработчики событий для элемента, который вызывает подсказку
+        var triggerElementSvg1 = document.getElementById("image1");
+        triggerElementSvg1.addEventListener("mouseover", showInfoBox1);
+        triggerElementSvg1.addEventListener("mouseout", hideInfoBox1);
+
+    //     -------------------------------------------------------------------
+            var infoBox2 = document.getElementById("infoBox2");
+
+        // Добавляем обработчик события для мыши
+        document.addEventListener("mousemove", function (event) {
+            // Обновляем позицию бокса подсказки
+            infoBox2.style.left = event.pageX - 550 + "px"; // +10 для отступа от мыши
+            infoBox2.style.top = event.pageY  - 320 + "px"; // +10 для отступа от мыши
+        });
+
+        // Добавляем обработчики событий для показа и скрытия бокса подсказки
+        function showInfoBox2() {
+            infoBox2.style.display = "block";
+        }
+
+        function hideInfoBox2() {
+            infoBox2.style.display = "none";
+        }
+
+        // Добавляем обработчики событий для элемента, который вызывает подсказку
+        var triggerElementSvg2 = document.getElementById("image2");
+        triggerElementSvg2.addEventListener("mouseover", showInfoBox2);
+        triggerElementSvg2.addEventListener("mouseout", hideInfoBox2);
+    //     ----------------------------------------------------------------------------
+            var infoBox3 = document.getElementById("infoBox3");
+
+        // Добавляем обработчик события для мыши
+        document.addEventListener("mousemove", function (event) {
+            // Обновляем позицию бокса подсказки
+            infoBox3.style.left = event.pageX - 550 + "px"; // +10 для отступа от мыши
+            infoBox3.style.top = event.pageY - 320 + "px"; // +10 для отступа от мыши
+        });
+
+        // Добавляем обработчики событий для показа и скрытия бокса подсказки
+        function showInfoBox3() {
+            infoBox3.style.display = "block";
+        }
+
+        function hideInfoBox3() {
+            infoBox3.style.display = "none";
+        }
+
+        // Добавляем обработчики событий для элемента, который вызывает подсказку
+        var triggerElementSvg3 = document.getElementById("image3");
+        triggerElementSvg3.addEventListener("mouseover", showInfoBox3);
+        triggerElementSvg3.addEventListener("mouseout", hideInfoBox3);
+    });
+
+    // ?--------------------------------------------------------
+    const form = document.querySelector('form');
+
+// Prevent default form submission behavior
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    // Implement form validation and submission logic here
+});
+
+// Add smooth scrolling within the form (optional)
+form.addEventListener('wheel', (event) => {
+    event.preventDefault();
+    form.scrollTop += event.deltaY;
+});
+</script>
+
+</body>
+</html>
